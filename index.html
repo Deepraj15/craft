@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+    <title>Bootstrap website</title>
+    <style>
+        .container-size{
+            height: 700px;
+            width: 100%;
+            background-color: #3d626c;
+            position: relative;
+        }
+        .image{
+            height: 700px;
+            width: 100%;
+            background-image: url('https://mobirise.com/extensions/personam4/assets/images/mbr.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 700px;
+            position: absolute;
+            z-index: 1;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            
+        }
+        .container{
+            height: 600px;
+            width: 60%;
+            margin-top: 30px;
+            margin-left: 20px;
+            padding-left: 200px;
+            padding-bottom: 200px;
+            position: absolute;
+        }
+        .btn{
+            background-color: transparent;
+            padding: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+            cursor: pointer;
+            font-size: 17px;
+            margin-top: 30px;
+            
+        }
+        .container button::before{
+            content: "";
+            height: 100%;
+            width: 0%;
+            background-color: white;
+            top: 0;
+            left: 0;
+            position: absolute;
+            transition: all 1s;
+            z-index: -1;
+
+         }
+         .container button{
+            color: white;
+            overflow: hidden;
+         }
+         .container button:hover::before{
+            width: 100%;
+            
+         }
+         .contents{
+            height: 500px;
+            padding: 10px;
+         }
+         .four-box div:nth-child(1){
+            height: 500px;
+         }
+         .four-box div:nth-child(3){
+            height: 500px;
+           
+         }
+         .four-box div:nth-child(even){
+            height: 500px;
+
+
+         }
+         .first{
+            padding: 10px;
+         }
+         .row{
+            height: 100px;
+            width: 101%;
+         }
+         
+         .span::after{
+            content: "";
+            height: 4px;
+            width: 0%;
+            background-color: black;
+            top: 100%;
+            bottom: -5;
+            transition: 0.5s;
+            position: absolute;
+            right: 1%;
+
+         }
+          .span:hover:after{
+            width: 65%;
+
+         }
+         .span:hover{
+            cursor: pointer;
+         }
+         .boxes div:hover{
+            box-shadow: 0px 3px 5px black;
+            cursor: pointer;
+         }
+         .co
+        {
+            color: #ffffff;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.2;
+            z-index: 10;
+        }
+        .bottom{
+            height: 600px;
+            width: 100%;
+            border: 2px solid red;
+            margin-top: 500px;
+            margin-left: 150px;
+        }
+        .row-colom{
+        height: 400px;
+        width: 100%;
+        margin-top: 500px;
+        margin-left: 10px;
+        }
+        #view{
+            margin-bottom: 80px;
+            margin-left: 20px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .all{
+            background-color: #fff3f3;
+            height: 1600px;
+            margin-top: 50px;
+            width: 100%;
+        }
+        .image2{
+            width: 100%;
+            margin-left: 150px;
+        }
+        .image3{
+            width: 100%;
+            margin-left: 150px;
+            margin-top: 700px;
+        }
+        .some-content{
+            width: 100%;
+            margin-left: 150px;
+            margin-top: 1250px;
+            
+        }
+        .row-images{
+             height: 123%;
+             width: 123.5%;
+             margin-left: -200px;
+             margin-top: 80px;
+        }
+        .left{
+            background-image: url("https://mobirise.com/extensions/personam4/assets/images/mbr-1.jpg");
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left1{
+            background-image: url("https://mobirise.com/extensions/personam4/assets/images/mbr-2.jpg");
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left:hover{
+            box-shadow: 0px 3px 5px black;
+            cursor: pointer;
+        }
+        .left1:hover{
+            box-shadow: 0px 3px 5px black;
+            cursor: pointer;
+        }
+         
+        .right{
+            background-image: url("https://mobirise.com/extensions/personam4/assets/images/mbr-4.jpg");
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .right1{
+            background-image: url("https://mobirise.com/extensions/personam4/assets/images/mbr-3.jpg");
+            height: 400px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .right:hover{
+            box-shadow: 0px 3px 5px black;
+            cursor: pointer;
+        }
+        .right1:hover{
+            box-shadow: 0px 3px 5px black;
+            cursor: pointer;
+        }
+        .left2{
+            height: 400px;
+        }
+        .right2{
+            height: 400px;
+        }
+        .row-content{
+            border: 2px solid red;
+            height: 400px;
+            margin-top: 1300px;
+            width: 100%;
+        }
+        .second-row{
+            height: 650px;
+        }
+        .row1{
+            height: 325px;
+        }
+        .row2{
+            height: 325px;
+        }
+        .first{
+            background-image: url('https://mobirise.com/extensions/personam4/assets/images/mbr-3.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 650px;
+            opacity: 0.8;
+            height: 650px;
+            width: 98%;
+            position: absolute;
+            z-index: -1;
+        }
+        .show{
+            height: 650px;
+        }
+        .second1{
+            background-image: url('https://mobirise.com/extensions/personam4/assets/images/mbr.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .third2{
+            background-image: url('https://mobirise.com/extensions/personam4/assets/images/mbr-4.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #view1{
+            margin-top: 200px;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .last{
+            width: 103%;
+            margin-left: -10px;
+        
+        }
+        .container-1{
+            height: 300px;
+            width: 100%;
+            margin-left: 180px;
+        }
+        .row-1{
+            height: 300px;
+            margin-left: -200px;
+            width: 123.3%;
+
+        }
+        .row-1 div{
+            height: 300px;
+        }
+        .row-1 div:nth-child(.all) img{
+            width: 150px;
+            height: 150px;
+
+        }
+        .row-1 div:nth-child(3) img{
+            width: 150px;
+            height: 115px;
+        }
+        .row-1 div:nth-child(2) img{
+            width: 150px;
+            height: 115px;
+        }
+        .row-1 div:nth-child(4) img{
+            width: 150px;
+            height: 115px;
+        }
+        .latest{
+            height: 550px;
+            margin-top: 400px;
+            background-color: #eaf4f8;
+        }
+        .latest-row div:nth-child(1){
+            height: 550px;
+    
+        }
+        .latest-row div:nth-child(2){
+            height: 550px;
+    
+        }
+        .navbar{
+            width: 102%;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid container-size">
+        <div class="image">
+             <!-- <div class="row"></div>
+            <div class="container  col-md-7 mt-30 ml-30 d-flex flex-column justify-content-center align-items-md-start align-items-center">
+                  <h1 class="co" style="font-size: 60px; margin-bottom: 40px; margin-bottom: 40px;">Craft Shop</h1>
+                  <p style="color:white; font-size: x-large; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar efficitur risus. Nulla elementum suscipit odio</p>
+                  <button class="btn text-uppercase border border-white position-relative" >View More</button>
+            </div> -->
+        </div>
+        <div class="row navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Personam4</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 p-2" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+        </div>
+        <div class="container  col-md-7 mt-30 ml-30 d-flex flex-column justify-content-center align-items-md-start align-items-center">
+            <h1 class="co" style="font-size: 60px; margin-bottom: 40px; margin-bottom: 40px; font-family: 'Cormorant_Garamond varint0', Tofu;">Craft Shop</h1>
+            <p class="co" style="color:white; font-size: x-large; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar efficitur risus. Nulla elementum suscipit odio</p>
+            <button  class="btn text-uppercase border border-white position-relative co" >View More</button>
+      </div>
+    </div>
+    </div>
+         <div class="row four-box mt-40px">
+            <div class="col-md-3  position-relative boxes">
+                <div style="background-color:  #d7edd8; margin-left: 20px;" >
+                <h1 style="margin-top: 40px; padding-left: 40px; padding-top: 80px; color:  #154D4D;; ">Style</h1>
+                <p style="margin-top: 40pxpx; position: absolute; padding-top: 70px">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit.</p>
+                <span style="margin-top: 250px;  font-weight: bold; position: absolute; padding-left: 40px;" class="span">View More</span>
+                </div>
+            </div>
+            <div class="col-md-3  position-relative boxes">
+                <div style="background-color: #fff3f3;">
+                    <h1 style="margin-top: 40px;  padding-left: 40px; padding-top: 80px; color:  #154D4D;;">Brand</h1>
+                    <p style="margin-top: 40pxpx; position: absolute; padding-top: 70px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit.</p>
+                    <span style="margin-top: 250px;  font-weight: bold; position: absolute; padding-left: 40px;" class="span">View More</span>
+                </div>
+            </div>
+            <div class="col-md-3  position-relative boxes">
+                <div style="background-color: #eaf4f8;">
+                    <h1 style="margin-top: 40px;  padding-left: 40px; padding-top: 80px; color:  #154D4D;;">Design</h1>
+                    <p style="margin-top: 40pxpx; position: absolute; padding-top: 70px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit.</p>
+                    <span style="margin-top: 250px;  font-weight: bold; position: absolute; padding-left: 40px;" class="span">View More</span>
+                </div>
+            </div>
+            <div class="col-md-3  position-relative boxes">
+                <div style="background-color: #fff3f3;">
+                    <h1 style="margin-top: 40px;  padding-left: 40px; padding-top: 80px; color:  #154D4D;;">Fashion</h1>
+                    <p style="margin-top: 40pxpx; position: absolute; padding-top: 70px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit.</p>
+                    <span style="margin-top: 250px;font-weight: bold; position: absolute; padding-left: 40px;" class="span">View More</span>
+                </div>
+         </div>
+    </div>
+    <div class="container-fluid text">
+        <div class="row row-colom">
+            <div class="col-md-6 d-flex flex-row align-items-center" style="background-color:  #d7edd8;;">
+                <h1 class="display-3 text-right padding-left:11px;" style="color: #3d626c;">A new way to create design for you</h1>
+            </div>
+            <div class="col-md-6 d-flex flex-column justify-content-center" style="background-color: #eaf4f8;">
+                <p style="margin-bottom: 40px; margin-left: 60px;">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit. Lorem ipsum dolor sit amet, consec tetur adipiscing elit adipiscing elitdo.</p>
+                <span style="margin-top: 250px;  position: absolute; padding-left: 40px;" class="span" id="view">View More</span>
+            </div>
+        </div>
+    </div>
+    <div class=" container-fluid all">
+    <div class="container image2">
+        <h1 class="text-center" style="font-size: 50px; font-family: sans-serif; margin-top: 40px; margin-left: -150px; font-family: 'Cormorant_Garamond variant0', Tofu; color: #154D4D;">Make Your Style Today</h1>
+        <div class="row row-images">
+            <div class="col-md-7 left"></div>
+            <div class=" offset-md-1 col-md-4 right"></div>
+        </div> 
+        <div class="row row-images">
+            <div class="col-md-6" style="margin-top: -160px;"><strong style="font-size: 30px; font-weight: 300; margin-left: -3px; font-family: 'Cormorant_Garamond variant0', Tofu; color:  #154D4D;">Ideas</strong><br/>Projects</div>
+            <div class=" offset-md-2 col-md-4" style="margin-top: -160px;"><strong style="font-size: 30px; font-weight: 300; margin-left: -3px; font-family: 'Cormorant_Garamond variant0', Tofu; color:  #154D4D;;">Skills</strong><br/>Portfolio</div>
+        </div> 
+    </div> 
+    <div class="container image3">
+        <div class="row row-images ">
+            <div class="col-md-4  left1" ></div>
+            <div class=" offset-md-1 col-md-7 right1"></div>
+        </div> 
+        <div class="row row-images">
+            <div class="col-md-6" style="margin-top: -160px;"><strong style="font-size: 30px; font-weight: 300; margin-left: -3px; font-family: 'Cormorant_Garamond variant0', Tofu; color:  #154D4D;;">Team</strong><br/>Projects</div>
+            <div class=" offset-md-2 col-md-4" style="margin-top: -160px;"><strong style="font-size: 30px; font-weight: 300; margin-left: -3px; font-family: 'Cormorant_Garamond variant0', Tofu; color:  #154D4D;;">Works</strong><br/>Portfolio</div>
+        </div> 
+    </div>
+    <div class="container some-content">
+        <div class="row row-images ">
+            <div class="col-md-4  left2" >
+                <h1 style="font-family: 'Cormorant_Garamond variant0', Tofu; color: #3d626c;">Brand History</h1>
+                <p style="width: 150%; margin-top: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a tortor sed mi fringilla suscipit. Fusce fermentum consequat tincidunt. Aliquam id fringilla lacus. Duis laoreet urna at pellentesque semper. Nunc eu ornare dui. Sed pulvinar condimentum volutpat. Vestibulum vitae rutrum urna, sed maximus metus. Donec fermentum, leo eget ultrices fringilla.</p>
+            </div>
+            <div class=" offset-md-1 col-md-7 right2">
+                <p style="width: 83%; margin-top: 65px; margin-left: 100px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a tortor sed mi fringilla suscipit. Fusce fermentum consequat tincidunt. Aliquam id fringilla lacus. Duis laoreet urna at pellentesque semper. Nunc eu ornare dui. Sed pulvinar condimentum volutpat. Vestibulum vitae rutrum urna, sed maximus metus. Donec fermentum, leo eget ultrices fringilla.</p>
+            </div>
+        </div>
+        </div> 
+   </div>
+</div>
+<div class="container-fluid last">
+    <div class="row second-row">
+        <div class="col-md-6 d-flex flex-row align-items-center">
+            <div class="first" style="background-color: black;"></div>
+            <h1 class="display-4" style="padding: 150px;">A New Way To Create Design</h1>
+        </div>
+        <div class="col-md-6 second">
+            <div class="row row1">
+                <div class="col-md-6 second1">
+                </div>
+                <div class="col-md-6 second2 d-flex  flex-column justify-content-center" style="background-color: #3d626c; color: whitesmoke;">
+                    <h1 class="display-4 margin-bottom: 20px" style="font-family:'Cormorant_Garamond varint0', Tofu;">Create Your Unique Style</h1>
+                    <span style="position: absolute; padding-left: 40px;" class="span" id="view1">View Case</span>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-md-6 third1 d-flex flex-row align-items-center" style="background-color: #b1d5e3;">
+                    <p style="font-size: x-large;">Lorem ipsum dolor sit amet, consectetur adipiscing elitdo eiusmod temporeum dicant partem scripserit.</p>
+                </div>
+                <div class="col-md-6 third2"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container container-1">
+    <div class="row row-1 justify-content-around">
+        <div class="col-md-2 d-flex flex-column justify-content-center ">
+            <img src="management.jpg" alt="">
+            <h3 style="margin-left: -5px; color: #3d626c;">management</h3>
+        </div>
+        <div class="col-md-2 d-flex flex-column justify-content-center ">
+            <img src="profession.jpg" alt="">
+            <h3 style="margin-left: -20px; color:#3d626c; ;">Professionalism</h3>
+        </div>
+        <div class="col-md-2 d-flex flex-column justify-content-center ">
+            <img src="socialism.jpg" alt="">
+            <h3 style="margin-left: 10px; color: #3d626c;">Sociability</h3>
+        </div>
+        <div class="col-md-2 d-flex flex-column justify-content-center ">
+            <img src="multitask.jpg" alt="">
+            <h3 style=" color: #3d626c;">Multitasking</h3>
+        </div>
+        <div class="col-md-2 d-flex flex-column justify-content-center ">
+            <img src="Attention.jpg" alt="">
+            <h3 style="margin-left: -10px; color: #3d626c;">Attentiveness</h3>
+        </div>
+    </div>
+</div>
+<div class="container-fluid latest">
+    <div class="row latest-row">
+        <div class="col-md-4" style="background-color: #fff3f3;">
+        <h1 class="text-right" style="margin-top: 20px; color: #3d626c;">Unique Style</h1>
+        </div>
+        <div class="col-md-8" style="background-color: #eaf4f8; padding-top: 20px;">
+            <h1 style="color: #3d626c;">A New Way To Create Design</h1>
+            <p style="color: #3d626c;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate est leo, vitae auctor metus eleifend eu. Quisque fermentum nisi sed convallis ornare.</p>
+            <ul style="line-height: 1.9; color: #3d626c;">
+                <li>Aliquam lorem ante, dapibus in, viverra quis, feugiat</li>
+                <li>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean</li>
+                <li>Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi nam</li>
+                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean</li>
+                <li>Maecenas tempus, tellus eget</li>
+                <li>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. neque</li>
+                <li>Venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros lorem</li>
+                <li>Nullam quis ante. Etiam sit amet eget eros faucibus tinci</li>
+                <li>Luctus pulvinar hendrerit</li>
+                <li>Sapien ut libero</li>
+                <li>Adipiscing elit</li>
+            </ul>
+            <span style="position: absolute; padding-left: 40px; margin-top: 0%; color: #3d626c;;" class="span" id="view1">Read More</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
